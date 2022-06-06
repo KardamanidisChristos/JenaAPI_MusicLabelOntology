@@ -1,0 +1,1290 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#"
+     xml:base="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#choose -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#choose">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#chosenBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#chosenBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#choose"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operatedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#consistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#consistsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#includedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#contributes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#contributes">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#has"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#coordinates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#coordinates">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Director"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#has -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#has">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#includedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#includedIn">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#includes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Concert"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Festival"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Musician"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Singer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isCoordinatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isCoordinatedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Director"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#coordinates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isLegallyCovered -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isLegallyCovered">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Copyrights_Attorney"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Notary"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Products"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isPlannedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isPlannedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#legallyCover -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#legallyCover">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Copyrights_Attorney"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Notary"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Products"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isLegallyCovered"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#masteredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#masteredBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operatedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#masters -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#masters">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#masteredBy"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#mixedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#mixedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#mixes"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operatedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#mixes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#mixes">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operatedBy">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operates"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#operates">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#plans -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#plans">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isPlannedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#recordedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#recordedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#address">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#location"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumMusicGenre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumMusicGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#birthDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#birthDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#businessName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#businessName">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#capacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#email">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#employeeEducation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#employeeEducation">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#eventDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#eventDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#firstName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#firstName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isSingle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#isSingle">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <rdfs:range rdf:resource="&xsd;boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#knownAs -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#knownAs">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Musician"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Singer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#label -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#label">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#lastName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#lastName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#location">
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#locationOfEvent -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#locationOfEvent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#location"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#locationOfStudio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#locationOfStudio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#location"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musicianInstrument -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musicianInstrument"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musicianInstrumentType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musicianInstrumentType"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#phoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#phoneNumber">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#quality -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#quality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Video_Clip"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#releaseDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#releaseDate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Video_Clip"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#salary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#salary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#songDuration -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#songDuration">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <rdfs:range rdf:resource="&xsd;integer"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#songName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#songName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#studioName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#studioName">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#ticketPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#ticketPrice">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+        <rdfs:range rdf:resource="&xsd;double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Concert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Concert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Copyrights_Attorney -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Copyrights_Attorney">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Director -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Director">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Festival -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Festival">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Business_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Musician -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Musician">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Notary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Notary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Legal_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Products -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Products">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Sales_Manager -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Sales_Manager">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Singer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Singer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Art_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Social_Media_Marketer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Social_Media_Marketer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Marketing_Sales_Department"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#MusicProductionCompany"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Video_Clip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Video_Clip">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Products"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <releaseDate rdf:datatype="&xsd;dateTime">2008-08-19</releaseDate>
+        <label rdf:datatype="&xsd;string">Interscope</label>
+        <albumName rdf:datatype="&xsd;string">The Fame</albumName>
+        <albumMusicGenre rdf:datatype="&xsd;string">pop</albumMusicGenre>
+        <isLegallyCovered rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#copyrights_attorney"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong1"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong2"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong3"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong4"/>
+        <recordedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popStudio"/>
+        <masteredBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer6"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <albumName rdf:datatype="&xsd;string">Americana</albumName>
+        <label rdf:datatype="&xsd;string">Columbia</label>
+        <albumMusicGenre rdf:datatype="&xsd;string">Rock</albumMusicGenre>
+        <isLegallyCovered rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#copyrights_attorney"/>
+        <operatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer2"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong1"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong2"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong3"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong4"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong5"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong6"/>
+        <recordedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockStudio"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#athensConcert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#athensConcert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Concert"/>
+        <ticketPrice rdf:datatype="&xsd;decimal">15</ticketPrice>
+        <eventDate rdf:datatype="&xsd;dateTime">2014-09-19</eventDate>
+        <capacity rdf:datatype="&xsd;integer">5000</capacity>
+        <locationOfEvent>Athens, Greece</locationOfEvent>
+        <isPlannedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager1"/>
+        <includes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#copyrights_attorney -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#copyrights_attorney">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Copyrights_Attorney"/>
+        <salary rdf:datatype="&xsd;integer">90000</salary>
+        <firstName rdf:datatype="&xsd;string">Jess</firstName>
+        <lastName rdf:datatype="&xsd;string">Stones</lastName>
+        <legallyCover rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame"/>
+        <legallyCover rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+        <isCoordinatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#director1"/>
+        <legallyCover rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#director1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#director1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Director"/>
+        <birthDate rdf:datatype="&xsd;dateTime">1978-05-07</birthDate>
+        <salary rdf:datatype="&xsd;integer">350000</salary>
+        <lastName rdf:datatype="&xsd;string">Janick</lastName>
+        <firstName rdf:datatype="&xsd;string">John</firstName>
+        <email rdf:datatype="&xsd;string">ceo@interscope.com</email>
+        <coordinates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#copyrights_attorney"/>
+        <coordinates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager1"/>
+        <coordinates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager2"/>
+        <coordinates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#notary"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#losAngelesConcert -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#losAngelesConcert">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Concert"/>
+        <capacity rdf:datatype="&xsd;integer">12000</capacity>
+        <ticketPrice rdf:datatype="&xsd;decimal">20</ticketPrice>
+        <eventDate rdf:datatype="&xsd;dateTime">2008-07-20</eventDate>
+        <locationOfEvent rdf:datatype="&xsd;string">Los Angeles, California</locationOfEvent>
+        <isPlannedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager2"/>
+        <includes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#raper1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager"/>
+        <salary rdf:datatype="&xsd;integer">150000</salary>
+        <birthDate rdf:datatype="&xsd;dateTime">1985-05-27</birthDate>
+        <lastName>Campbell</lastName>
+        <firstName>Bobby</firstName>
+        <plans rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#athensConcert"/>
+        <isCoordinatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#director1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Manager"/>
+        <lastName rdf:datatype="&xsd;string"> Rosenberg</lastName>
+        <salary rdf:datatype="&xsd;integer">160000</salary>
+        <birthDate rdf:datatype="&xsd;dateTime">1971-08-01</birthDate>
+        <firstName rdf:datatype="&xsd;string">Paul</firstName>
+        <isCoordinatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#director1"/>
+        <plans rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#losAngelesConcert"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Musician"/>
+        <birthDate rdf:datatype="&xsd;string">February 4, 1963</birthDate>
+        <musicianInstrument rdf:datatype="&xsd;string">Guitar</musicianInstrument>
+        <lastName rdf:datatype="&xsd;string">John Wasserman</lastName>
+        <firstName rdf:datatype="&xsd;string">Kevin</firstName>
+        <knownAs rdf:datatype="&xsd;string">Noodles</knownAs>
+        <musicianInstrumentType rdf:datatype="&xsd;string">strings</musicianInstrumentType>
+        <contributes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Musician"/>
+        <musicianInstrument rdf:datatype="&xsd;string">Bassist</musicianInstrument>
+        <birthDate rdf:datatype="&xsd;string">January  21, 1968 </birthDate>
+        <lastName rdf:datatype="&xsd;string">Morse</lastName>
+        <firstName rdf:datatype="&xsd;string">Todd </firstName>
+        <musicianInstrumentType rdf:datatype="&xsd;string">strings</musicianInstrumentType>
+        <contributes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Musician"/>
+        <lastName rdf:datatype="&xsd;string"> David Kriesel</lastName>
+        <musicianInstrument rdf:datatype="&xsd;string">Bassist</musicianInstrument>
+        <firstName rdf:datatype="&xsd;string">Gregory</firstName>
+        <birthDate rdf:datatype="&xsd;string">January 20, 1965</birthDate>
+        <musicianInstrumentType rdf:datatype="&xsd;string">strings</musicianInstrumentType>
+        <contributes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#notary -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#notary">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Notary"/>
+        <salary rdf:datatype="&xsd;integer">80000</salary>
+        <lastName rdf:datatype="&xsd;string">Brickley</lastName>
+        <firstName rdf:datatype="&xsd;string">Dan</firstName>
+        <isCoordinatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#director1"/>
+        <legallyCover rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician"/>
+        <legallyCover rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician2"/>
+        <legallyCover rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer1"/>
+        <legallyCover rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <releaseDate rdf:datatype="&xsd;dateTime">2009-03-24</releaseDate>
+        <songDuration rdf:datatype="&xsd;integer">3
+</songDuration>
+        <songName rdf:datatype="&xsd;string">Love Game</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <releaseDate rdf:datatype="&xsd;dateTime">2008-04-08</releaseDate>
+        <songDuration rdf:datatype="&xsd;integer">3</songDuration>
+        <songName rdf:datatype="&xsd;string">Just Dance</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <releaseDate rdf:datatype="&xsd;dateTime">2008-09-23</releaseDate>
+        <songDuration rdf:datatype="&xsd;integer">3</songDuration>
+        <songName rdf:datatype="&xsd;string">Poker Face</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popSong4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <releaseDate rdf:datatype="&xsd;dateTime">2009-07-06</releaseDate>
+        <songDuration rdf:datatype="&xsd;integer">3</songDuration>
+        <songName rdf:datatype="&xsd;string">Paparazzi</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popStudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#popStudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio"/>
+        <studioName rdf:datatype="&xsd;string">Interscope Studio</studioName>
+        <locationOfStudio rdf:datatype="&xsd;string">Santa Monica, California</locationOfStudio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <birthDate rdf:datatype="&xsd;string">1965</birthDate>
+        <phoneNumber rdf:datatype="&xsd;string">877-373-4542</phoneNumber>
+        <firstName rdf:datatype="&xsd;string">Andre</firstName>
+        <knownAs rdf:datatype="&xsd;string">DrDre</knownAs>
+        <lastName rdf:datatype="&xsd;string">Young</lastName>
+        <email rdf:datatype="&xsd;string">drdre@gmail.com</email>
+        <operates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <firstName rdf:datatype="&xsd;string">Dave</firstName>
+        <lastName rdf:datatype="&xsd;string">Jerden</lastName>
+        <operates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <lastName rdf:datatype="&xsd;string">Mel-Man Bradford</lastName>
+        <firstName rdf:datatype="&xsd;string">Melvin </firstName>
+        <operates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <lastName rdf:datatype="&xsd;string">Bass</lastName>
+        <firstName rdf:datatype="&xsd;string">Mark </firstName>
+        <operates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <lastName rdf:datatype="&xsd;string">Bass</lastName>
+        <firstName rdf:datatype="&xsd;string">Jeff</firstName>
+        <operates rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Producer"/>
+        <birthDate rdf:datatype="&xsd;dateTime">1972-04-09</birthDate>
+        <lastName>Khayat</lastName>
+        <knownAs>RedOne</knownAs>
+        <firstName>Nadir</firstName>
+        <masters rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">5</songDuration>
+        <songName rdf:datatype="&xsd;string">My Name Is</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">7</songDuration>
+        <songName rdf:datatype="&xsd;string">Paul</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">5</songDuration>
+        <songName rdf:datatype="&xsd;string">If I Had</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">3</songDuration>
+        <songName rdf:datatype="&xsd;string">Lounge</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">2</songDuration>
+        <songName rdf:datatype="&xsd;string">My Fault</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">3</songDuration>
+        <songName rdf:datatype="&xsd;string">Soap</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">3</songDuration>
+        <songName rdf:datatype="&xsd;string">As the world Turns</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">3</songDuration>
+        <songName rdf:datatype="&xsd;string">Role Model</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapStudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapStudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio"/>
+        <locationOfStudio rdf:datatype="&xsd;string">Ferndale, Michigan</locationOfStudio>
+        <studioName rdf:datatype="&xsd;string">Studio 8</studioName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#raper1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#raper1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Singer"/>
+        <birthDate rdf:datatype="&xsd;string">1972</birthDate>
+        <phoneNumber rdf:datatype="&xsd;string">313-666-7440</phoneNumber>
+        <knownAs rdf:datatype="&xsd;string">Eminem</knownAs>
+        <firstName rdf:datatype="&xsd;string">Marshall</firstName>
+        <lastName rdf:datatype="&xsd;string">Mathers</lastName>
+        <email rdf:datatype="&xsd;string">marshallmathers@gmail.com</email>
+        <contributes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockFestival -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockFestival">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Festival"/>
+        <eventDate rdf:datatype="&xsd;dateTime">2009-10-01</eventDate>
+        <capacity rdf:datatype="&xsd;integer">30000</capacity>
+        <ticketPrice rdf:datatype="&xsd;decimal">80</ticketPrice>
+        <locationOfEvent rdf:datatype="&xsd;string">Berlin, Germany</locationOfEvent>
+        <isPlannedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#manager2"/>
+        <includes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician"/>
+        <includes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician1"/>
+        <includes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#musician2"/>
+        <includes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">4</songDuration>
+        <songName rdf:datatype="&xsd;string">The Kids Arent Alright</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">5</songDuration>
+        <songName rdf:datatype="&xsd;string">The meaning of life</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">6</songDuration>
+        <songName rdf:datatype="&xsd;string">Gone Away</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">4</songDuration>
+        <songName rdf:datatype="&xsd;string">I choose</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">4</songDuration>
+        <songName rdf:datatype="&xsd;string">Have you ever</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">4</songDuration>
+        <songName rdf:datatype="&xsd;string">No brakes</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockSong6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Song"/>
+        <songDuration rdf:datatype="&xsd;integer">5</songDuration>
+        <songName rdf:datatype="&xsd;string">Staring at the Sun</songName>
+        <includedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockStudio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rockStudio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Studio"/>
+        <locationOfStudio rdf:datatype="&xsd;string">Burbank, California</locationOfStudio>
+        <studioName rdf:datatype="&xsd;string">Eldorado Recording</studioName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Singer"/>
+        <birthDate rdf:datatype="&xsd;string">1965</birthDate>
+        <firstName rdf:datatype="&xsd;string">Bryan</firstName>
+        <lastName rdf:datatype="&xsd;string">Keith Dexter</lastName>
+        <contributes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#americana"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#singer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Singer"/>
+        <birthDate rdf:datatype="&xsd;dateTime">1986-03-28</birthDate>
+        <firstName>Stefani</firstName>
+        <knownAs>Lady Gaga</knownAs>
+        <lastName>Germanotta</lastName>
+        <contributes rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#albumTheFame"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#slimShadyAlbum">
+        <rdf:type rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#Album"/>
+        <label rdf:datatype="&xsd;string">Aftermath Interscope</label>
+        <albumMusicGenre rdf:datatype="&xsd;string">Rap</albumMusicGenre>
+        <albumName rdf:datatype="&xsd;string">Slim Shady</albumName>
+        <isLegallyCovered rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#copyrights_attorney"/>
+        <operatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer1"/>
+        <operatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer3"/>
+        <operatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer4"/>
+        <operatedBy rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#producer5"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong1"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong2"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong3"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong4"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong5"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong6"/>
+        <consistsOf rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapSong7"/>
+        <recordedIn rdf:resource="http://www.semanticweb.org/christos/ontologies/2022/4/untitled-ontology-9#rapStudio"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
